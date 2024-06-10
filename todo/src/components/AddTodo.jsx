@@ -15,6 +15,8 @@ function AddTodo({addBtn}) {
   const handeOnClicked = () => {
     // console.log(`${todoName}, ${todoDate}`);
     addBtn(todoName, todoDate)
+    setTodoName("")
+    setTodoDate("")
   }
 
 
@@ -29,7 +31,7 @@ function AddTodo({addBtn}) {
           </div>
           <div className="col-2">
             <button type="button" className="btn btn-success kg-button" onClick={handeOnClicked}>
-              Add
+              Add Todo
             </button>
           </div>
         </div>
