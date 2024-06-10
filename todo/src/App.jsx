@@ -44,7 +44,7 @@ function App() {
     <center className="todo-container">
       <AppName />
       <AddTodo  addBtn = {addTodo}/>
-      <WelcomeMessage todo = {todoItem}></WelcomeMessage>
+      <WelcomeMessage todoItem = {todoItem}></WelcomeMessage>
       <TodoItems todo = {todoItem} delBtn = {deleteTodo}></TodoItems>
     </center>
   );
