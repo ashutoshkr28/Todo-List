@@ -3,6 +3,7 @@ import AddTodo from "./components/AddTodo";
 import TodoItems from "./components/TodoItems";
 import "./App.css";
 import { useState } from "react";
+import WelcomeMessage from "./components/WelcomeMessage";
 
 function App() {
   const todoItems = [
@@ -43,6 +44,7 @@ function App() {
     <center className="todo-container">
       <AppName />
       <AddTodo  addBtn = {addTodo}/>
+      <WelcomeMessage todo = {todoItem}></WelcomeMessage>
       <TodoItems todo = {todoItem} delBtn = {deleteTodo}></TodoItems>
     </center>
   );
